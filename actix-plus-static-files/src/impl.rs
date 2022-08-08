@@ -16,6 +16,7 @@ use std::{
 use actix_web::dev::ServiceRequest;
 
 /// Static files resource.
+#[derive(Clone)]
 pub struct Resource {
     pub data: &'static [u8],
     pub etag: String,
